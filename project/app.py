@@ -7,25 +7,25 @@ app=Flask(__name__)
 @app.route("/")
 @app.route("/home")
 def homepage():
-    return 'this is home page'
+    return render_template('home.html')
 
 
 @app.route("/blog")
 def blogpage():
-    return ' this is blog page '
+    return render_template("blog.html")
 
 @app.route("/post1")
 def post1page():
-    return 'thi is post page 1'
+    return render_template("post1.html")
 
 
 @app.route("/post2")
 def post2page():
-    return 'thi is post page '
+    return render_template("post2.html")
 
 @app.route("/post3")
 def post3page():
-    return 'thi is post page 3'
+    return render_template("post3.html")
 
 
 @app.route("/register")
